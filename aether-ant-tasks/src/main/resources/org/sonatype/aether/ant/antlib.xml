@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Copyright (c) 2008 Sonatype, Inc. All rights reserved.
+
+This program is licensed to you under the Apache License Version 2.0, 
+and you may not use this file except in compliance with the Apache License Version 2.0. 
+You may obtain a copy of the Apache License Version 2.0 at http://www.apache.org/licenses/LICENSE-2.0.
+
+Unless required by applicable law or agreed to in writing, 
+software distributed under the Apache License Version 2.0 is distributed on an 
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. 
+See the Apache License Version 2.0 for the specific language governing permissions and limitations there under.
+-->
+
+<antlib>
+
+  <typedef name="authentication"       classname="org.sonatype.aether.ant.types.Authentication"/>
+  <typedef name="proxy"                classname="org.sonatype.aether.ant.types.Proxy"/>
+  <typedef name="mirror"               classname="org.sonatype.aether.ant.types.Mirror"/>
+  <typedef name="localrepo"            classname="org.sonatype.aether.ant.types.LocalRepository"/>
+  <typedef name="remoterepo"           classname="org.sonatype.aether.ant.types.RemoteRepository"/>
+  <typedef name="remoterepos"          classname="org.sonatype.aether.ant.types.RemoteRepositories"/>
+  <typedef name="dependency"           classname="org.sonatype.aether.ant.types.Dependency"/>
+  <typedef name="dependencies"         classname="org.sonatype.aether.ant.types.Dependencies"/>
+  <typedef name="artifact"             classname="org.sonatype.aether.ant.types.Artifact"/>
+  <typedef name="artifacts"            classname="org.sonatype.aether.ant.types.Artifacts"/>
+  <typedef name="settings"             classname="org.sonatype.aether.ant.types.Settings"/>
+
+  <taskdef name="resolve"              classname="org.sonatype.aether.ant.tasks.Resolve"/>
+  <taskdef name="install"              classname="org.sonatype.aether.ant.tasks.Install"/>
+  <taskdef name="deploy"               classname="org.sonatype.aether.ant.tasks.Deploy"/>
+  <taskdef name="pom"                  classname="org.sonatype.aether.ant.types.Pom"/>
+
+</antlib>
