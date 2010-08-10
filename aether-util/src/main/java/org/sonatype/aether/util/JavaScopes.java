@@ -1,4 +1,4 @@
-package org.sonatype.aether.impl.internal;
+package org.sonatype.aether.util;
 
 /*
  * Copyright (c) 2010 Sonatype, Inc. All rights reserved.
@@ -13,16 +13,28 @@ package org.sonatype.aether.impl.internal;
  * See the Apache License Version 2.0 for the specific language governing permissions and limitations there under.
  */
 
-import org.sonatype.aether.InvalidVersionException;
-import org.sonatype.aether.Version;
-
 /**
+ * The dependency scopes used for Java dependencies.
+ * 
  * @author Benjamin Bentmann
+ * @see org.sonatype.aether.Dependency#getScope()
  */
-interface VersionScheme
+public final class JavaScopes
 {
 
-    Version parseVersion( String version )
-        throws InvalidVersionException;
+    public static final String COMPILE = "compile";
+
+    public static final String PROVIDED = "provided";
+
+    public static final String SYSTEM = "system";
+
+    public static final String RUNTIME = "runtime";
+
+    public static final String TEST = "test";
+
+    private JavaScopes()
+    {
+        // hide constructor
+    }
 
 }
